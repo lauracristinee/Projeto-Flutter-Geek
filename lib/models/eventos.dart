@@ -1,5 +1,6 @@
 class Evento {
   // aqui eu dei o nome e o tipo de dao que ele recebe,
+  // adicionado as dependencias no pubspec.yaml -> url_launcher para ir para o link ao clicar no botão
   String imgEvento;
   String eventoName;
   String eventoData;

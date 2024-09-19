@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:geek_connect/models/eventos.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:geek_connect/widgets/constantes.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 
 class DetalhesScreen extends StatefulWidget {
@@ -24,8 +25,11 @@ class _DetalhesScreenState extends State<DetalhesScreen> {
           children: [
             Expanded(
               flex: 6,
+              //botão comprar ingresso
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () async{
+                  await launch(widget.eventos.siteUrl); //chamando o link do evento, precisa-se importar biblioteca tbm.
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: kprimaryColor,
                   foregroundColor: Colors.white,
@@ -36,7 +40,9 @@ class _DetalhesScreenState extends State<DetalhesScreen> {
             const SizedBox(width: 10,),
             Expanded(
               child: IconButton(
-                onPressed: () {},
+                onPressed: () async{
+                  await launch(widget.eventos.siteUrl);
+                },
                 style: IconButton.styleFrom(
                   shape: CircleBorder(
                     side: BorderSide(

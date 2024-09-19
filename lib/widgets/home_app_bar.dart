@@ -8,9 +8,9 @@ class HomeAppBar extends StatelessWidget {
   final List<Evento> listaFavoritos;
 
   const HomeAppBar({
-    Key? key,
+    super.key,
     required this.listaFavoritos,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
