@@ -45,7 +45,7 @@ class SobreNos extends StatelessWidget {
                     ),
                 ),
                   const SizedBox(height: 20),
-                  Image.asset('assets/geeks.png', height: 50),
+                  Image.asset('images/geeks.png', height: 200),
                 ],
               ),
             ),
