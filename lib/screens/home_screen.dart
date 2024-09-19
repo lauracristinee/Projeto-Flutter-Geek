@@ -90,7 +90,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => CardExamplesApp(  //importar
+                          builder: (context) => SobreNos(  //importar
                           ),
                         ),
                       );

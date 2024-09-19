@@ -38,6 +38,9 @@ assets:
   - 'images/banner.png'
   - 'images/background.png'
   - 'images/imgmenu.png'
+  - assets/tela.png
+  - assets/geeks.png
+  
 
 # fonts:
 #   - family: Biotit
