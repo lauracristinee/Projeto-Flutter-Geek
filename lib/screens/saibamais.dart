@@ -12,13 +12,12 @@ class SaibaMais extends StatelessWidget {
     return Scaffold( //scaffold para criar um layout padrão
     //a partir daqui a criação do gradient roxo, com as posições do mesmo
     body: Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors:[Color(0xFF9B5DE5), Color.fromARGB(255, 236, 221, 255).withOpacity(0.5)],
-          begin:Alignment.topLeft,
-          end: Alignment.bottomRight,
-          ),
-      ),
+  decoration: BoxDecoration(
+    image: DecorationImage(
+      image: AssetImage('images/tela.png'), // substitua com o caminho da sua imagem
+      fit: BoxFit.cover, // ajuste a imagem para cobrir toda a tela
+    ),
+  ),
             child:Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
