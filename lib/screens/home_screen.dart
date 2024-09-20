@@ -21,6 +21,81 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   String currentCat= "All";  
 
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(''),
+        backgroundColor: Color.fromARGB(255, 181, 170, 194),
+      ),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: Color.fromARGB(255, 180, 155, 212),
+              ),
+              child: Column(
+                children: [
+                  Image.asset(
+                    'images/geeks.png',
+                    fit: BoxFit.cover,
+                    width: 125, 
+                    height: 125, 
+                  ),
+                  SizedBox(height: 8),
+                ],
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.info), // Add an icon to the leading side
+              title: Text(
+                'Saiba mais',
+                style: TextStyle(
+                  fontFamily: 'Biofit',
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
+              ),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => SaibaMais(), 
+                  ),
+                );
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.people), // Add an icon to the leading side
+              title: Text(
+                'Sobre nós',
+                style: TextStyle(
+                  fontFamily: 'Biofit',
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
+              ),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => SobreNos(), 
+                  ),
+                );
+              },
+            ),
+          ],
+        ),
+      ),
+
+/* código antigo do menu
+class _HomeScreenState extends State<HomeScreen> {
+  String currentCat= "All";  
+
 //na utilização do menu hambúrguer, foi utilizado um drawer, uma propriedade específica para isso
   @override
   Widget build(BuildContext context) {
@@ -98,9 +173,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ],
         ),
-      ),
-
-
+      ),*/
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(

@@ -40,7 +40,7 @@ class SobreNos extends StatelessWidget {
     borderRadius: BorderRadius.circular(100),
       ),
       child: Container(
-        height: 270,
+        height: 230,
         width: double.infinity, // ajuste para que o card tenha a largura total
         color: const Color.fromARGB(255, 255, 255, 255),
       ),
@@ -60,7 +60,7 @@ class SobreNos extends StatelessWidget {
   ],
 ),
                   const SizedBox(height: 20),
-                  Image.asset('images/geeks.png', height: 300),
+                  Image.asset('images/geeks.png', height: 200),
                 ],
               ),
             ),
