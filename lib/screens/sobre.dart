@@ -33,19 +33,35 @@ class SobreNos extends StatelessWidget {
                 ),
                   ),
                   const SizedBox(height: 20),
-                  const Padding(
-                    padding: EdgeInsets.all(20.0),
-                    child: Text(
-                      'O aplicativo "Geeks por SP" foi desenvolvido por alunas do 3º ano do Ensino Médio integrado ao técnico em Desenvolvimento de Sistemas, Helena Menezes e Laura Cristine Silva, e tem como intuito, informar e dissipar eventos ao público "geek" na região do estado de São Paulo.',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 18,
-                        color: Color.fromARGB(255, 0, 0, 0),
-                      ),
-                    ),
-                ),
+                  Stack(
+  children: [
+    // card atrás do texto
+    Card(
+       shape: RoundedRectangleBorder( //deixar arredondado
+    borderRadius: BorderRadius.circular(100),
+      ),
+      child: Container(
+        height: 200,
+        width: double.infinity, // ajuste para que o card tenha a largura total
+        color: const Color.fromARGB(255, 255, 255, 255),
+      ),
+    ),
+    
+    Padding(
+      padding: const EdgeInsets.all(20.0),
+      child: Text(
+        'O aplicativo "Geeks por SP" foi desenvolvido por alunas do 3º ano do Ensino Médio integrado ao técnico em Desenvolvimento de Sistemas, Helena Menezes e Laura Cristine Silva, e tem como intuito, informar e dissipar eventos ao público "geek" na região do estado de São Paulo.',
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          fontSize: 18,
+          color: Color.fromARGB(255, 0, 0, 0),
+        ),
+      ),
+    ),
+  ],
+),
                   const SizedBox(height: 20),
-                  Image.asset('images/geeks.png', height: 200),
+                  Image.asset('images/geeks.png', height: 300),
                 ],
               ),
             ),
