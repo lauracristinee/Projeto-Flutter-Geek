@@ -10,5 +10,6 @@
 - Layout: https://github.com/lauracristinee/Projeto-Flutter-Geek/wiki/LAYOUT
 - Telas e Navegação: https://github.com/lauracristinee/Projeto-Flutter-Geek/wiki/TELAS-E-NAVEGAÇÃO
 - Telas programadas: https://github.com/lauracristinee/Projeto-Flutter-Geek/wiki/TELAS-PROGRAMADAS
+- Alterações feitas: 
 
 
